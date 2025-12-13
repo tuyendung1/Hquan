@@ -24,8 +24,8 @@ var morgan = require('morgan');
 let configDB = require('./config/database');
 let mongoose = require('mongoose');
 // INT 64bit
-mongoose.set('useFindAndModify', false);
-mongoose.set('useCreateIndex',   true);
+//mongoose.set('useFindAndModify', false);
+//mongoose.set('useCreateIndex',   true);
 mongoose.connect(configDB.url, configDB.options); // kết nối tới database
 // cấu hình tài khoản admin mặc định và các dữ liệu mặc định
 require('./config/admin');
@@ -54,4 +54,5 @@ require('./config/cron')();
 require('./app/Telegram/Telegram')(redT); // Telegram Bot
 app.listen(port, function() {
     console.log("Server listen on port ", port);
+
 });
