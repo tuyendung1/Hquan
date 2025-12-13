@@ -18,8 +18,9 @@ module.exports = {
 	//	'user':   'root',
 	//	'pass':   '',
 		'dbName': 'PlayGame', // red
-		'useNewUrlParser': true,
+	//	'useNewUrlParser': true,
 		'useUnifiedTopology': true,
 		//'autoIndex':       false,
 	},
 };
+
