@@ -9,11 +9,11 @@
 //		'useUnifiedTopology': true,
 //		//'autoIndex':       false,
 //	},
-//};heliiooo0202_db_user aZ47nfbutqdoesfi
+//}; vblwmml.mongodb.net/Cluster0?retrywrites=true&w=majority
 
 
 module.exports = {
-	'url': 'mongodb+srv://heliiooo0202_db_user:<12345678@2>@cluster0.vblwmml.mongodb.net/?appName=Cluster0',
+	'url': 'mongodb+srv://heliiooo0202_db_user:2qLR29owIWeDjYiy@cluster0.vblwmml.mongodb.net/?appName=Cluster0',
 	'options': {
 	//	'user':   'root',
 	//	'pass':   '',

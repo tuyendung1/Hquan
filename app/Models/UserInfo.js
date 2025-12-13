@@ -12,14 +12,14 @@ let Schema = new mongoose.Schema({
 	security:  {                          // Bảo Mật
 		login:  {type:Number, default:0}, // Bảo mật đăng nhập
 	},
-	red:       {type:mongoose.Schema.Types.Long, default:0, index:true},     // RED
-	ketSat:    {type:mongoose.Schema.Types.Long, default:0},     // RED trong két sắt
-	redWin:    {type:mongoose.Schema.Types.Long, default:0},   // Tổng Red thắng
-	redLost:   {type:mongoose.Schema.Types.Long, default:0},   // Tổng Red thua
-	redPlay:   {type:mongoose.Schema.Types.Long, default:0},   // Tổng Red đã chơi
-	totall:    {type:mongoose.Schema.Types.Long, default:0, index:true},   // Thắng trừ thua
+	red:       {type:mongoose.Schema.Types.Decimal128, default:0, index:true},     // RED
+	ketSat:    {type:mongoose.Schema.Types.Decimal128, default:0},     // RED trong két sắt
+	redWin:    {type:mongoose.Schema.Types.Decimal128, default:0},   // Tổng Red thắng
+	redLost:   {type:mongoose.Schema.Types.Decimal128, default:0},   // Tổng Red thua
+	redPlay:   {type:mongoose.Schema.Types.Decimal128, default:0},   // Tổng Red đã chơi
+	totall:    {type:mongoose.Schema.Types.Decimal128, default:0, index:true},   // Thắng trừ thua
 	vip:       {type:Number, default:0},                         // Tổng vip tích luỹ (Vip đã đổi thưởng)
-	lastVip:   {type:mongoose.Schema.Types.Long, default:0},     // Cập nhật lần đổi thưởng cuối
+	lastVip:   {type:mongoose.Schema.Types.Decimal128, default:0},     // Cập nhật lần đổi thưởng cuối
 	hu:        {type:Number, default:0},                         // Số lần Nổ Hũ Red
 	type:      {type:Boolean, default:false, index:true},        // Bot = true | Users = false
 	veryphone: {type:Boolean, default:false},                    // Trạng thái xác thực
