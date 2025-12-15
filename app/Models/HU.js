@@ -12,9 +12,9 @@ let Schema = new mongoose.Schema({
 	balans:  {type: Number, default: 0},                     // Số hũ còn lại
 	x:       {type: Number, default: 0},                     // Hệ số nhân
 	hu:      {type: Number, default: 0},                     // Hũ Red đã nổ
-	redPlay: {type: mongoose.Schema.Types.Long, default: 0}, // Tổng Red đã chơi
-	redWin:  {type: mongoose.Schema.Types.Long, default: 0}, // Tổng Red thắng
-	redLost: {type: mongoose.Schema.Types.Long, default: 0}, // Tổng Red thua
+	redPlay: {type: mongoose.Schema.Types.Decimal128, default: 0}, // Tổng Red đã chơi
+	redWin:  {type: mongoose.Schema.Types.Decimal128, default: 0}, // Tổng Red thắng
+	redLost: {type: mongoose.Schema.Types.Decimal128, default: 0}, // Tổng Red thua
 });
 
 Schema.index({game:1, type:1, red:1}, {background: true});

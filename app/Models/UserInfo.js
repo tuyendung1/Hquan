@@ -27,7 +27,7 @@ let Schema = new mongoose.Schema({
 	otpFirst:  {type:Boolean, default:false},                    // Kiểm tra lần đầu lấy mã OTP
 	gitCode:   {type:Number,  default:0},                        // Số lần Lấy mã GiftCode thành công
 	gitRed:    {type:Number,  default:0},                        // Tiền lấy đc từ GiftCode
-	gitTime:   {type:Date},                                      // Ngày sử dụng Gitfcode
+	gitTime:   {type:Date,default: 0},                                      // Ngày sử dụng Gitfcode
 	rights:    {type:Number,  default:0},                        // Cấp bậc
 });
 

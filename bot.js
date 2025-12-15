@@ -5,10 +5,6 @@ let User      = require('./app/Models/Users');
 
 let helpers   = require('./app/Helpers/Helpers');
 // mongoose.set('debug', true);
-require('mongoose-long')(mongoose); // INT 64bit
-
-mongoose.set('useFindAndModify', false);
-mongoose.set('useCreateIndex', true);
 
 console.log(configDB);
 
