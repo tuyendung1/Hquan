@@ -9,11 +9,11 @@
 //		'useUnifiedTopology': true,
 //		//'autoIndex':       false,
 //	},
-//}; vblwmml.mongodb.net/Cluster0?retrywrites=true&w=majority
+//};
 
 
 module.exports = {
-	'url': 'mongodb+srv://heliiooo0202_db_user:2qLR29owIWeDjYiy@cluster0.vblwmml.mongodb.net/Cluster0?retrywrites=true&w=majority',
+	'url': 'mongodb://127.0.0.1:27017',
 	'options': {
 	//	'user':   'root',
 	//	'pass':   '',

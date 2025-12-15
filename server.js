@@ -23,7 +23,7 @@ var morgan = require('morgan');
 // Setting & Connect to the Database
 let configDB = require('./config/database');
 let mongoose = require('mongoose');
-// INT 64bit
+require('mongoose-long')(mongoose); // INT 64bit
 mongoose.set('useFindAndModify', false);
 mongoose.set('useCreateIndex',   true);
 mongoose.connect(configDB.url, configDB.options); // kết nối tới database
