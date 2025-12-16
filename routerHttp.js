@@ -6,24 +6,21 @@ module.exports = function(app, redT) {
 	// Home
 	app.get('/', function(req, res) {
 		if (mobile({ua:req})){
-			return res.redirect('/mobile/');
+			return res.redirect('/web/');
 		} else {
 			return res.redirect('/web/');
 		}
 	});
 	app.get('/playgame/', function(req, res) {
 		if (mobile({ua:req})){
-			return res.redirect('/mobile/');
+			return res.redirect('/web/');
 		} else {
 			return res.render('index');
 		}
 	});
-	app.get('/mobile/', function(req, res) {
-		if (mobile({ua:req})){
-			return res.render('index_mobile');
-		} else {
+	app.get('/web/', function(req, res) {
+
 			return res.redirect('/web/');
-		}
 	});
 
 	// Android
