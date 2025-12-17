@@ -4,7 +4,7 @@ require('dotenv').config();
 var cors = require('cors');
 
 let Telegram = require('telebot');
-let TelegramToken = "1994240179:AAGmDQfq2EUrAtdVkdsABmp7tvgBNkqbrWs";
+let TelegramToken = "8483827563:AAG7U8ng-l-IgjVL3H7detkRaCGz_DwhXlM";
 let TelegramBot = new TeleBot(TelegramToken);
 
 
@@ -58,3 +58,4 @@ require('./app/Telegram/Telegram')(TelegramBot); // Telegram Bot
 app.listen(port, function() {
     console.log("Server listen on port ", port);
 });
+
